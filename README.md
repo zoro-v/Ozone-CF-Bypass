@@ -7,6 +7,9 @@
 It automates the process of solving Cloudflare challenges via **Playwright**, captures the valid session cookies, and uses them to test server responses for various HTTP methods (GET, POST, PUT, OPTIONS).
 
 ---
+⚠️ Disclaimer
+This tool is developed by Ozone for educational purposes and security research only.
+---
 
 ## ⚡ Features
 
