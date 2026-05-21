@@ -1,9 +1,8 @@
- import asyncio
+import asyncio
 import requests
 import time
 import random
 import argparse
-import sys
 from playwright.async_api import async_playwright
 
 # ألوان الطباعة
@@ -36,7 +35,7 @@ methods = ["GET", "POST", "PUT", "OPTIONS"]
 async def get_cf_cookies(url):
     print(f"{Colors.YELLOW}[*] Launching Browser for: {url}{Colors.RESET}")
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=False)
+        browser = await p.chromium.launch(headless=True)
         context = await browser.new_context()
         page = await context.new_page()
 
